@@ -1,0 +1,24 @@
+/* *Cabecera */
+
+.header__logo {
+  width: 400px;
+  height: 150px;
+}
+
+/* *Segunda seccion - caracteristicas del producto */
+.product .product__details {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.product__details .product__card {
+  width: 300px;
+  height: 200px;
+}
+
+/* *Cuarta seccion - planes y precios */
+
+.plans .plans__container {
+  margin: 120px auto;
+}

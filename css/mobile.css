@@ -1,0 +1,646 @@
+/* *Cabecera */
+
+.header {
+  /* posición relativa para ubicar el cta */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-width: 320px;
+  height: 320px;
+  background: var(--gradient-color);
+}
+
+.header__logo {
+  width: 151px;
+  padding: 16px 0 36px 0;
+}
+
+.header__content {
+  width: 90%;
+}
+
+/* titulos principales */
+.title {
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* parrafos generales */
+.pagraph {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.header__title {
+  margin-bottom: 24px;
+  color: var(--white-color);
+}
+
+.header__pagraph {
+  color: var(--primary-soft-color);
+}
+
+.header__link {
+  /* posicion absoluta, calculada segun posicion relativa del header */
+  position: absolute;
+  /* 100% del alto del relativo - mitad del alto del absoluto */
+  top: calc(100% - 24px);
+  /* 50% del ancho del relativo - mitad del ancho del absoluto */
+  left: calc(50% - 115px);
+  display: inline-block;
+  width: 230px;
+  height: 48px;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 3px;
+  border: none;
+  font-weight: var(--font-weight-bold);
+  background: var(--off-white-color);
+  color: var(--black-color);
+  box-shadow: var(--box-shadow);
+}
+
+.header__link .icon {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url('../assets/icons/down.svg');
+}
+
+/* *Contenido principal */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  /* por defecto, color de fondo para todas las secciones */
+  background-color: var(--off-white-color);
+}
+
+/* *Primera seccion - Tasas de cambio, Monedas y Comisiones */
+
+.exchange-rates {
+  width: 90%;
+  text-align: center;
+}
+
+.exchange-rates__bitcoin-background {
+  width: 195px;
+  height: 195px;
+  margin: 75px auto 40px auto;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url('./assets/img/bitcoin.svg'); */
+  background: url('../assets/img/bitcoin.svg') center no-repeat;
+}
+
+.exchange-rates__content {
+  margin-bottom: 48px;
+}
+
+.exchange-rates__title {
+  margin-bottom: 24px;
+  color: var(--black-color);
+}
+
+.exchange-rates__pagraph {
+  /* color específico */
+  color: #757575;
+}
+
+/* seccion de tablas*/
+.exchange-rates__tables {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+/* tabla */
+.table {
+  /* por defecto, grid de tres filas implícitas */
+  display: grid;
+  gap: 24px;
+  width: 200px;
+  height: auto;
+  /* margin como alternativa a row-gap y column-gap */
+  margin: 30px;
+}
+
+.table .table__title {
+  justify-self: flex-start;
+  align-self: center;
+  font-size: 1.8rem;
+  line-height: 2.34rem;
+  margin-left: 10px;
+  font-weight: var(--font-weight-bold);
+}
+
+.table .table__title--orange {
+  color: var(--primary-color);
+}
+
+.table .table__title--blue {
+  color: var(--secondary-color);
+}
+
+.table .table__content {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white-color);
+}
+
+.table .table__row {
+  display: flex;
+}
+
+.table .table__row:not(.last) {
+  border-bottom: .5px solid var(--off-white-color);
+}
+
+.table .table__row .table__column:first-child{
+  border-right: .5px solid var(--off-white-color);
+}
+
+.table .table__row .table__column {
+  width: 50%;
+  height: 100%;
+  padding: 10px 12px;
+  text-align: start;
+  vertical-align: middle;
+}
+
+.table .table__coin-title {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  /* color especifico */
+  color: #B5B0AC;
+  font-weight: var(--font-weight-medium);
+}
+
+.table .table__coin-value {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  /* color especifico */
+  color: #757575;
+  font-weight: var(--font-weight-regular);
+}
+
+.table .table__icon {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 10px;
+}
+
+.table .table__icon-trending-down {
+  background: url('../assets/icons/trending-down.svg') center no-repeat;
+}
+
+.table .table__icon-trending-up {
+  background: url('../assets/icons/trending-up.svg') center no-repeat;
+}
+
+.table .table__update {
+  width: 115px;
+  height: auto;
+  justify-self: self-start;
+  align-self: center;
+  padding: 7px;
+  border-radius: 8px;
+  background-color: var(--primary-soft-color);
+}
+
+.table .table__update--primary-color-background {
+  background-color: var(--primary-soft-color);
+}
+
+.table .table__update--secondary-color-background {
+  background-color: var(--secondary-soft-color);
+}
+
+.table .table__update-text {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: var(--font-weight-regular);
+}
+
+.table .table__update-value {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+/* *Segunda seccion - caracteristicas del producto */
+
+.product {
+  /* mantiene el ancho del total del main */
+  width: 100%;
+  /* position para manejar el logo del producto */
+  position: relative;
+  background-color: var(--black-color);
+}
+
+.product__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__content {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.product__content .product__logo {
+  position: absolute;
+  top: -12px;
+  right: calc(50% - 24px);
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+  background: url('../assets/icons/batatabit-logo-icon.svg') center no-repeat;
+}
+
+.product__content .product__title {
+  color: var(--white-color);
+}
+
+.product__content .product__pagraph {
+  /* color especifico */
+  margin-top: 24px;
+  color: #808080;
+}
+
+.product .product__details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 46px;
+}
+
+.product__details .product__card {
+  /* Ancho minimo y maximo */
+  min-width: 288px;
+  max-width: 345px;
+  /* Alto minimo, se amolda si crece el cotenido */
+  min-height: 152px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow-alternative);
+  background-color: var(--black-variant-color);
+}
+
+.product__card .product__card-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+/* iconos de cada card */
+.product__card .product__card-icon--clock {
+  background: url('../assets/icons/clock.svg') center no-repeat;
+}
+
+.product__card .product__card-icon--eye {
+  background: url('../assets/icons/eye.svg') center no-repeat;
+}
+
+.product__card .product__card-icon--dollar {
+  background: url('../assets/icons/dollar-sign.svg') center no-repeat;
+}
+
+.product__card .product__card-icon--check {
+  background: url('../assets/icons/check-circle.svg') center no-repeat;
+}
+
+.product__card .product__card-title {
+  margin-top: 12px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: var(--white-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.product__card .product__card-description {
+  margin-top: 10px;
+  /* color especifico */
+  color: #808080;
+}
+
+/* *Tercera seccion - imagen de fondo y titulo */
+
+.background-image-container {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  text-align: center;
+  /* imagen 2x (640px * 774px) minificada (tinified) */
+  background: url('../assets/img/bitcoinbaby1x.png') center/cover no-repeat;
+}
+
+.background-image-container .background-image-container__title {
+  display: inline-block;
+  margin: 64px 0;
+  color: var(--white-color);
+}
+
+/* *Cuarta seccion - planes y precios */
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Titulo y parrafo */
+
+.plans .plans__content {
+  width: 90%;
+  text-align: center;
+}
+
+.plans__content .plans__title {
+  margin-top: 64px;
+  color: var(--black-color);
+}
+
+.plans__content .plans__pagraph {
+  margin-top: 24px;
+  /* color especifico */
+  color: #757575;
+}
+
+/* contenedor de cards con los planes */
+
+.plans .plans__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 50px 0 65px 0;
+  /* 
+  estilos para manejar overflow horizontal
+
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  */
+}
+
+/* card y elementos */
+
+.plans__container .plans__card {
+  position: relative;
+  /* 
+  comportamiento del scroll en el card, centrar 
+  scroll-snap-align: center; */
+  width: 70%;
+  min-width: 190px;
+  max-width: 223px;
+  height: 247px;
+  border-radius: 8px;
+  margin: 20px 15px;
+  padding: 24px 20px;
+  text-align: center;
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow-light);
+}
+
+.plans__container .plans__card--bg-dark {
+  background-color: var(--black-variant-color);
+}
+
+.plans__card .plans__card-recomended {
+  position: absolute;
+  width: 106px;
+  height: 31px;
+  top: -15.5px;
+  right: calc(50% - 53px);
+  padding: 8px;
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  border-radius: 8px;
+  font-weight: var(--font-weight-bold);
+}
+
+.plans__card .plans__card-recomended--light-orange {
+  color: var(--black-color);
+  background-color: var(--primary-soft-color);
+}
+
+.plans__card .plans__card-recomended--orange {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.plans__card .plans__card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans__card .plans__card-content .plans__card-title {
+  margin: 9px 0;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--black-color);
+}
+
+.plans__card .plans__card-content .plans__card-title--dark {
+  color: var(--white-color);
+}
+
+.plans__card .plans__card-content .plans__card-price {
+  position: relative;
+  font-size: 5.2rem;
+  line-height: 5rem;
+  letter-spacing: -6px;
+  color: var(--black-color);
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-bold);
+}
+
+.plans__card .plans__card-content .plans__card-price--dark {
+  color: var(--white-color);
+}
+
+.plans__card .plans__card-content .plans__card-price span {
+  position: absolute;
+  left: -10px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+
+.plans__card .plans__card-content .plans__card-saving{
+  margin: 16px 0;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #757575;
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-medium);
+}
+
+.plans__card .plans__card-content .plans__card-cta {
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 48px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--black-variant-color);
+}
+
+.plans__card .plans__card-content .plans__card-cta--grey {
+  background-color: var(--off-white-color);
+  border: 2px solid var(--grey-color);
+}
+
+.plans__card .plans__card-content .plans__card-cta--grey:hover{
+  background-color: var(--grey-variant-color);
+}
+
+.plans__card .plans__card-content .plans__card-cta--orange {
+  background-color: var(--primary-soft-color);
+  border: 2px solid var(--primary-color);
+}
+
+.plans__card .plans__card-content .plans__card-cta--orange:hover {
+  background-color: var(--primary-color);
+}
+
+.plans__card .plans__card-content .plans__card-cta span {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background: url('../assets/icons/arrow-right-grey.svg') center no-repeat;
+}
+
+/* *Quinta seccion - preguntas frecuentes */
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.faq .faq__container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq__container .faq__content {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.faq__content .faq__title {
+  color: var(--black-variant-color);
+}
+
+.faq__container .faq__questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* pregunta */
+.faq__questions .faq__questions-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 280px;
+  min-height: 36px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.faq__questions-item .faq__question-text {
+  display: inline-block;
+  width: 90%;
+  min-width: 236px;
+  color: #757575;
+}
+
+.faq__questions-item .faq__question-icon {
+  display: inline-block;
+  width: 20px;
+  height: 36px;
+  background: url('../assets/icons/down.svg') center no-repeat;
+}
+
+/* *Pie de pagina */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: var(--primary-color);
+}
+
+.footer .footer__links-list {
+  list-style: none;
+}
+
+.footer__links-list .footer__link-item {
+  margin: 8px;
+}
+
+.footer__links-list .footer__link-item .link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--white-color);
+}
+
+.footer__logo-wrapper {
+  width: 64px;
+  height: 50px;
+}
+
+.footer__logo-wrapper .footer__logo {
+  width: 100%;
+  height: 100%;
+}

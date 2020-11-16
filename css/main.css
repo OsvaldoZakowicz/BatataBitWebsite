@@ -1,0 +1,72 @@
+/** 
+  * *Orden de loas propiedades y valores de cada regla
+  * 1- Posicionamiento y dimensiones, display
+  * 2- Modelo de caja (margin, padding, border, content)
+  * 3- Tipografía
+  * 4- Estilos visuales
+  * 5- Otros
+*/
+
+/** 
+  * *Variables:
+*/
+
+:root {
+  /* COLORS------------------------- */
+  /* bitcoin orange */
+  --primary-color: #F7931A;
+  /* soft orange */
+  --primary-soft-color: #FFE9D5;
+  /* blue */
+  --secondary-color: #1A9AF7;
+  /* soft blue */
+  --secondary-soft-color: #E7F5FF;
+  /* warm black */
+  --black-color: #201E1C;
+  /* warm black +1 */
+  --black-variant-color: #282623;
+  /* grey */
+  --grey-color: #BABABA;
+  /* soft grey background */
+  --grey-variant-color: #E5E5E5;
+  /* off white */
+  --off-white-color: #FAF8F7;
+  /* just white */
+  --white-color: #FFFFFF;
+  /* gradient */
+  --gradient-color: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  /* box-shadow */
+  --box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  /* box-shadow-alternative */
+  --box-shadow-alternative: 0px 4px 8px rgba(0,0,0, 0.16);
+  /* box-shadow-light */
+  --box-shadow-light: 0px 4px 8px rgba(89,73,30,0.16);
+  /* FONTS-------------------------- */
+  /* primary 400 - 500 - 700 */
+  --primary-font: 'DM Sans', sans-serif;
+  /* secondary 400 - 500 */
+  --secondary-font: 'Inter', sans-serif;
+  /* weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* scroll suave */
+  scroll-behavior: smooth;
+  /* Fuente principal del proyecto */
+  font-family: var(--primary-font);
+}
+
+body {
+  /* 1rem = 10px */
+  font-size: 1.6rem;
+}

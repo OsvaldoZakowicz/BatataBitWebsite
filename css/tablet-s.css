@@ -1,0 +1,61 @@
+
+/* *Cabecera */
+
+.header {
+  height: 480px;
+}
+
+.header__logo {
+  width: 174px;
+}
+
+.title {
+  font-size: 4rem;
+  line-height: 4.2rem;
+}
+
+.pagraph {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.header__title {
+  margin-bottom: 32px;
+}
+
+/* *Primera seccion - tablas de monedas y comisiones */
+
+.table {
+  margin: 30px 15px;
+}
+
+/* *Tercera seccion - imagen de fondo y titulo */
+
+.background-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/img/bitcoinbaby2x.png') center/cover no-repeat;
+}
+
+/* *Cuarta seccion - planes y precios */
+.plans__container .plans__card {
+  /* width fijo */
+  width: 190px;
+}
+
+/* *Pie de pagina */
+
+.footer {
+  height: 250px;
+}
+
+.footer__links-list .footer__link-item .link {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.footer__logo-wrapper {
+  width: 166px;
+  height: 111px;
+}

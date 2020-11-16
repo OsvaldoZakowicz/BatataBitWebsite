@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fuentes del proyecto -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- CSS main (estilos base, variables: color, fuentes)-->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- CSS mobile first: width >= 320px -->
+  <link rel="stylesheet" href="./css/mobile.css">
+  <!-- CSS tablet-s: width >= 600px -->
+  <link rel="stylesheet" href="./css/tablet-s.css" media="screen and (min-width: 600px)">
+  <!-- CSS tablet-m: width >= 800px -->
+  <link rel="stylesheet" href="./css/tablet-m.css" media="screen and (min-width: 800px)">
+  <!-- CSS desktop-s: width >= 1280px -->
+  <link rel="stylesheet" href="./css/desktop-s.css" media="screen and (min-width: 1280px)">
+  <!-- CSS desktop-m: width: >= 1440px -->
+  <link rel="stylesheet" href="./css/desktop-m.css" media="screen and (min-width: 1440px)">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header class="header">
+    <img class="header__logo" src="./assets/img/logo.svg" alt="Logo de Batatabit">
+    <div class="header__content">
+      <h1 class="header__title title">La próxima revolución en el intercambio de criptomonedas.</h1>
+      <p class="header__pagraph pagraph">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+      <a class="header__link" href="#plans">Conoce Nuestros Planes<span class="icon"></span></a>
+    </div>
+  </header>
+  <!-- Contenido principal -->
+  <main class="main">
+    <!-- Primera seccion - Tasas de cambio, Monedas y Comisiones -->
+    <section class="exchange-rates">
+      <div class="exchange-rates__bitcoin-background"></div>
+      <div class="exchange-rates__content">
+        <h2 class="exchange-rates__title title">Visibilizamos todas las tasas de cambio.</h2>
+        <p class="exchange-rates__pagraph pagraph">Traemos información en tiempo real de las casas de cambio y las
+          monedas más importantes del mundo.</p>
+      </div>
+      <section class="exchange-rates__tables">
+        <!-- Tabla de monedas -->
+        <article class="table">
+          <h3 class="table__title table__title--orange">Monedas</h3>
+          <div class="table__content">
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Bitcoin</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$1.92<span class="table__icon table__icon-trending-down"></span></p>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Ethereum</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$0.07<span class="table__icon table__icon-trending-up"></span></p>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Ripple</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$2.15<span class="table__icon table__icon-trending-down"></span></p>
+              </div>
+            </div>
+            <div class="table__row last">
+              <div class="table__column">
+                <h4 class="table__coin-title">Stellar</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$4.96<span class="table__icon table__icon-trending-down"></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="table__update table__update--primary-color-background">
+            <p class="table__update-text">Valores en</p>
+            <span class="table__update-value">$ USD</span>
+          </div>
+        </article>
+        <!-- Tabla de comisiones -->
+        <article class="table">
+          <h3 class="table__title table__title--blue">Comisiones</h3>
+          <div class="table__content">
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Bitrade</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$12.96</p>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Bitpreco</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$13.07</p>
+              </div>
+            </div>
+            <div class="table__row">
+              <div class="table__column">
+                <h4 class="table__coin-title">Novadax</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$13.15</p>
+              </div>
+            </div>
+            <div class="table__row last">
+              <div class="table__column">
+                <h4 class="table__coin-title">Coinext</h4>
+              </div>
+              <div class="table__column">
+                <p class="table__coin-value">$14.96</p>
+              </div>
+            </div>
+          </div>
+          <div class="table__update table__update--secondary-color-background">
+            <p class="table__update-text">Valores en</p>
+            <span class="table__update-value">$ USD</span>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!-- Segunda seccion - caracteristicas del producto -->
+    <section class="product">
+      <div class="product__container">
+        <div class="product__content">
+          <span class="product__logo"></span>
+          <h2 class="product__title title">Te ayudamos a tomar la mejor decisión.</h2>
+          <p class="product__pagraph pagraph">Que la incertidumbre en materia de criptomonedas sea cosa del pasado.</p>
+        </div>
+        <!-- Cards caracteristicas de producto -->
+        <section class="product__details">
+          <article class="product__card">
+            <span class="product__card-icon product__card-icon--clock"></span>
+            <h3 class="product__card-title">Tiempo real</h3>
+            <p class="product__card-description">Nuestro API toma información minuto a minuto sobre las tasas
+              que más determinan el comportamiento.</p>
+          </article>
+          <article class="product__card">
+            <span class="product__card-icon product__card-icon--eye"></span>
+            <h3 class="product__card-title">No hay tasas escondidas</h3>
+            <p class="product__card-description">Ni en la compra o al momento de exit, Batabit siempre te
+              muestra el costo real de lo que estás adquiriendo.</p>
+          </article>
+          <article class="product__card">
+            <span class="product__card-icon product__card-icon--dollar"></span>
+            <h3 class="product__card-title">Compara monedas</h3>
+            <p class="product__card-description">No más rumores, con Babtabit sabrás el valor real de cada
+              moneda en el mercado actual.</p>
+          </article>
+          <article class="product__card">
+            <span class="product__card-icon product__card-icon--check"></span>
+            <h3 class="product__card-title">Información confiable</h3>
+            <p class="product__card-description">Nuestras fuentes están 100% verificadas y continuamos
+              auditando su contenido mientras se actualizan.</p>
+          </article>
+        </section>
+      </div>
+    </section>
+    <!-- Tercera seccion - imagen de fondo y titulo -->
+    <section class="background-image-container">
+      <h2 class="background-image-container__title title">Conócelo hoy.</h2>
+    </section>
+    <!-- Cuarta seccion - planes y precios -->
+    <section class="plans" id="plans">
+      <div class="plans__content">
+        <h2 class="plans__title title">Escoge el plan que mejor se ajuste a ti.</h2>
+        <p class="plans__pagraph pagraph">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+      </div>
+      <!-- Contenedor con los cards -->
+      <section class="plans__container">
+        <!-- card -->
+        <article class="plans__card">
+          <div class="plans__card-content">
+            <h3 class="plans__card-title">Plan Mensual</h3>
+            <p class="plans__card-price"><span>$</span>5</p>
+            <p class="plans__card-saving">*Plan básico para mantenerte informado.</p>
+            <button class="plans__card-cta plans__card-cta--grey">Escoger este<span></span></button>
+          </div>
+        </article>
+        <!-- card (recomendada) -->
+        <article class="plans__card">
+          <p class="plans__card-recomended plans__card-recomended--light-orange">Recomendado</p>
+          <div class="plans__card-content">
+            <h3 class="plans__card-title">Pago Anual</h3>
+            <p class="plans__card-price"><span>$</span>49</p>
+            <p class="plans__card-saving">*Ahorras $11comparado al plan mensual.</p>
+            <button class="plans__card-cta plans__card-cta--orange">Escoger este<span></span></button>
+          </div>
+        </article>
+        <!-- card -->
+        <article class="plans__card plans__card--bg-dark">
+          <p class="plans__card-recomended plans__card-recomended--orange">Pro</p>
+          <div class="plans__card-content">
+            <h3 class="plans__card-title plans__card-title--dark">Acceso de por vida</h3>
+            <p class="plans__card-price plans__card-price--dark"><span>$</span>99</p>
+            <p class="plans__card-saving">*Ahorras $999+ comparado al plan anual.</p>
+            <button class="plans__card-cta plans__card-cta--orange">Escoger este<span></span></button>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!-- Quinta seccion - preguntas frecuentes -->
+    <section class="faq">
+      <div class="faq__container">
+        <div class="faq__content">
+          <h2 class="faq__title title">¿Preguntas? Aquí estamos para ti.</h2>
+        </div>
+        <section class="faq__questions">
+          <article class="faq__questions-item">
+            <p class="faq__question-text pagraph">Batabit me permite hacer compras en su plataforma?</p><span class="faq__question-icon"></span>
+          </article>
+          <article class="faq__questions-item">
+            <p class="faq__question-text pagraph">Qué es Bitcoin?</p><span class="faq__question-icon"></span>
+          </article>
+          <article class="faq__questions-item">
+            <p class="faq__question-text pagraph">Cómo puedo realizar una transacción en bitcoins?</p><span class="faq__question-icon"></span>
+          </article>
+          <article class="faq__questions-item">
+            <p class="faq__question-text pagraph">Cómo aseguro mis compras?</p><span class="faq__question-icon"></span>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+  <!-- Pie de pagina -->
+  <footer class="footer">
+    <section class="footer__links">
+      <ul class="footer__links-list">
+        <li class="footer__link-item"><a href="#" class="link">Linkedin</a></li>
+        <li class="footer__link-item"><a href="#" class="link">Crunchbase</a></li>
+        <li class="footer__link-item"><a href="#" class="link">Hackernews</a></li>
+      </ul>
+    </section>
+    <section class="footer__logo-wrapper">
+      <img src="./assets/img/logo-s.svg" alt="Logo de batatabit 2020" class="footer__logo">
+    </section>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* *Cabecera */
+
+.header__logo {
+  width: 300px;
+}
+
+.header__content {
+  width: 1200px;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 5.2rem;
+}
+
+.pagraph {
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
+
+.header__title, .header__pagraph {
+  width: 800px;
+  margin: 25px auto;
+}
+
+.header__link{
+  /* 100% del alto del relativo - mitad del alto del absoluto */
+  top: calc(100% - 30px);
+  /* 50% del ancho del relativo - mitad del ancho del absoluto */
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 60px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 20px 16px;
+}
+
+/* *Primera seccion tablas de cambio y monedas */
+
+.exchange-rates__content {
+  width: 1200px;
+  margin: 0 auto 48px auto;
+}
+
+.exchange-rates__title, .exchange-rates__pagraph {
+  width: 800px;
+  margin: 25px auto;
+}
+
+.table {
+  width: 250px;
+}
+
+.table .table__row {
+  height: 55px;
+}
+
+.table .table__title {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+.table .table__coin-title {
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.table .table__coin-value {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.table .table__update {
+  width: 150px;
+}
+
+.table .table__update-text {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.table .table__update-value {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+/* *Segunda seccion - caracteristicas del producto */
+
+.product__content {
+  width: 1200px;
+}
+
+.product__card .product__card-title {
+  font-size: 2rem;
+  line-height: 2.2rem;
+} 
+
+/* *Tercera seccion - imagen de fondo y titulo */
+
+.background-image-container {
+  /* alto fijo */
+  height: 500px;
+}
+
+/* *Pie de pagina */
+
+.footer .footer__links {
+  width: 600px;
+}
+
+.footer .footer__links-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__links-list .footer__link-item .link {
+  font-size: 2.8rem;
+  line-height: 3rem;
+}
